@@ -37,21 +37,21 @@
 		<Event name="OnOpen">ПриОткрытии</Event>
 	</Events>
 	<ChildItems>
-		<Pages name="Группа" id="22">
+		<Pages name="ГруппаСтраниц" id="22">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Группа</v8:content>
+					<v8:content>Группа страниц</v8:content>
 				</v8:item>
 			</Title>
 			<ToolTip>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Группа</v8:content>
+					<v8:content>Группа страниц</v8:content>
 				</v8:item>
 			</ToolTip>
 			<PagesRepresentation>TabsOnBottom</PagesRepresentation>
-			<ExtendedTooltip name="ГруппаРасширеннаяПодсказка" id="23"/>
+			<ExtendedTooltip name="ГруппаСтраницРасширеннаяПодсказка" id="23"/>
 			<ChildItems>
 				<Page name="Подключение" id="26">
 					<Title>
@@ -155,7 +155,7 @@
 												<Presentation>
 													<v8:item>
 														<v8:lang>ru</v8:lang>
-														<v8:content>Отчет о розничных продажах</v8:content>
+														<v8:content>Розничные продажи</v8:content>
 													</v8:item>
 												</Presentation>
 												<Value xsi:type="xs:decimal">1</Value>
@@ -181,7 +181,7 @@
 												<Presentation>
 													<v8:item>
 														<v8:lang>ru</v8:lang>
-														<v8:content>Вовзрат товаров поставщику</v8:content>
+														<v8:content>Возврат товаров поставщику</v8:content>
 													</v8:item>
 												</Presentation>
 												<Value xsi:type="xs:decimal">3</Value>
@@ -233,7 +233,7 @@
 												<Presentation>
 													<v8:item>
 														<v8:lang>ru</v8:lang>
-														<v8:content>Номенклатура</v8:content>
+														<v8:content>Номенклатура, единицы измерения и контрагенты</v8:content>
 													</v8:item>
 												</Presentation>
 												<Value xsi:type="xs:decimal">7</Value>
@@ -246,7 +246,7 @@
 												<Presentation>
 													<v8:item>
 														<v8:lang>ru</v8:lang>
-														<v8:content>Переоценка</v8:content>
+														<v8:content>Переоценки</v8:content>
 													</v8:item>
 												</Presentation>
 												<Value xsi:type="xs:decimal">8</Value>
@@ -255,6 +255,9 @@
 									</ChoiceList>
 									<ContextMenu name="ТипЗагрузкиКонтекстноеМеню" id="31"/>
 									<ExtendedTooltip name="ТипЗагрузкиРасширеннаяПодсказка" id="32"/>
+									<Events>
+										<Event name="OnChange">ТипЗагрузкиПриИзменении</Event>
+									</Events>
 								</RadioButtonField>
 							</ChildItems>
 						</UsualGroup>
@@ -281,6 +284,7 @@
 											<v8:content>ККМ</v8:content>
 										</v8:item>
 									</Title>
+									<HorizontalStretch>true</HorizontalStretch>
 									<ContextMenu name="ККМКонтекстноеМеню" id="34"/>
 									<ExtendedTooltip name="ККМРасширеннаяПодсказка" id="35"/>
 								</InputField>
@@ -303,7 +307,7 @@
 							<ChildItems>
 								<InputField name="Склад" id="69">
 									<DataPath>Объект.Склад</DataPath>
-									<Enabled>false</Enabled>
+									<HorizontalStretch>true</HorizontalStretch>
 									<ContextMenu name="СкладКонтекстноеМеню" id="70"/>
 									<ExtendedTooltip name="СкладРасширеннаяПодсказка" id="71"/>
 								</InputField>
@@ -324,6 +328,7 @@
 							</ToolTip>
 							<HorizontalStretch>true</HorizontalStretch>
 							<Group>Horizontal</Group>
+							<HorizontalAlign>Center</HorizontalAlign>
 							<ExtendedTooltip name="ПериодРасширеннаяПодсказка" id="54"/>
 							<ChildItems>
 								<InputField name="НачалоПериода" id="43">
@@ -468,12 +473,12 @@
 									<ContextMenu name="ТаблицаДокументовПометкаКонтекстноеМеню" id="108"/>
 									<ExtendedTooltip name="ТаблицаДокументовПометкаРасширеннаяПодсказка" id="109"/>
 								</CheckBoxField>
-								<InputField name="ТаблицаДокументовДокументВБазе" id="104">
-									<DataPath>Объект.ТаблицаДокументов.ДокументВБазе</DataPath>
+								<InputField name="ТаблицаДокументовПредставлениеСтрокиХамелеона" id="104">
+									<DataPath>Объект.ТаблицаДокументов.ПредставлениеСтрокиХамелеона</DataPath>
 									<ReadOnly>true</ReadOnly>
 									<EditMode>EnterOnInput</EditMode>
-									<ContextMenu name="ТаблицаДокументовДокументВБазеКонтекстноеМеню" id="105"/>
-									<ExtendedTooltip name="ТаблицаДокументовДокументВБазеРасширеннаяПодсказка" id="106"/>
+									<ContextMenu name="ТаблицаДокументовПредставлениеСтрокиХамелеонаКонтекстноеМеню" id="105"/>
+									<ExtendedTooltip name="ТаблицаДокументовПредставлениеСтрокиХамелеонаРасширеннаяПодсказка" id="106"/>
 								</InputField>
 								<InputField name="ТаблицаДокументовПредставлениеДокумента" id="110">
 									<DataPath>Объект.ТаблицаДокументов.ПредставлениеДокумента</DataPath>
@@ -523,11 +528,11 @@
 							</v8:StringQualifiers>
 						</Type>
 					</Column>
-					<Column name="ДокументВБазе" id="3">
+					<Column name="ПредставлениеСтрокиХамелеона" id="3">
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
-								<v8:content>Документ в базе</v8:content>
+								<v8:content>Представление строки хамелеона</v8:content>
 							</v8:item>
 						</Title>
 						<Type>
