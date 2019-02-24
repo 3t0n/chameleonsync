@@ -1,14 +1,14 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.4">
-	<ExternalDataProcessor uuid="45db338b-6058-4d57-b282-4edbc13eac7d">
+	<ExternalDataProcessor uuid="74e86936-0c1e-494e-8c4f-46ae1f8574b8">
 		<InternalInfo>
 			<xr:ContainedObject>
 				<xr:ClassId>c3831ec8-d8d5-4f93-8a22-f9bfae07327f</xr:ClassId>
-				<xr:ObjectId>6b55eb46-b871-4d93-82e6-2d3882249ccb</xr:ObjectId>
+				<xr:ObjectId>0fff4524-5d36-46ce-85ae-ab44bbac6226</xr:ObjectId>
 			</xr:ContainedObject>
 			<xr:GeneratedType name="ExternalDataProcessorObject.chameleonsync" category="Object">
-				<xr:TypeId>9cf54f27-9d7b-4999-8bd2-5d1a2a39908c</xr:TypeId>
-				<xr:ValueId>b224d649-0ba8-4bf7-b43d-cb4a102fcbec</xr:ValueId>
+				<xr:TypeId>1e804059-2769-4eb9-9f2b-cd4c9505d885</xr:TypeId>
+				<xr:ValueId>cf166f41-3eaf-4c16-8287-3d7e91165669</xr:ValueId>
 			</xr:GeneratedType>
 		</InternalInfo>
 		<Properties>
@@ -24,7 +24,7 @@
 			<AuxiliaryForm/>
 		</Properties>
 		<ChildObjects>
-			<Attribute uuid="e67d5572-b21a-433d-b90d-f0d045ea3e3a">
+			<Attribute uuid="458a9989-ec3e-4546-8aab-323ada707718">
 				<Properties>
 					<Name>ТаблицаДокументов</Name>
 					<Synonym>
@@ -58,7 +58,7 @@
 					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
 				</Properties>
 			</Attribute>
-			<Attribute uuid="dee8c7ec-75dd-4f40-a0e8-705f47fbb424">
+			<Attribute uuid="e7f50fc9-835d-492e-8906-e33396dfcef4">
 				<Properties>
 					<Name>ИмяСервера</Name>
 					<Synonym>
@@ -96,7 +96,7 @@
 					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
 				</Properties>
 			</Attribute>
-			<Attribute uuid="c6cbc25c-da9f-46c4-9d9c-25a0bf11d1ea">
+			<Attribute uuid="eec0cfde-3b11-46fe-be05-37a9a6796232">
 				<Properties>
 					<Name>ПортСервера</Name>
 					<Synonym>
@@ -134,7 +134,7 @@
 					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
 				</Properties>
 			</Attribute>
-			<Attribute uuid="c4928685-c372-423f-a24a-fa3d518b859d">
+			<Attribute uuid="0497b6c4-74a7-4281-a89c-670969aef0f6">
 				<Properties>
 					<Name>ИмяБазы</Name>
 					<Synonym>
@@ -172,7 +172,7 @@
 					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
 				</Properties>
 			</Attribute>
-			<Attribute uuid="bfef1794-f2c1-4220-9e93-eb4774c08ab4">
+			<Attribute uuid="c0486b91-c1d7-4a93-9986-b0f2ddcd2c27">
 				<Properties>
 					<Name>ИмяПользователя</Name>
 					<Synonym>
@@ -210,7 +210,7 @@
 					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
 				</Properties>
 			</Attribute>
-			<Attribute uuid="def82d6f-7c12-43ca-bfb9-96b12a7e5c21">
+			<Attribute uuid="9533e2b5-8208-492a-ac1b-1807d5c204be">
 				<Properties>
 					<Name>ПарольПользователя</Name>
 					<Synonym>
@@ -248,7 +248,7 @@
 					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
 				</Properties>
 			</Attribute>
-			<Attribute uuid="765f4394-f3f8-4af1-a438-db3663e48431">
+			<Attribute uuid="6781251e-2b19-4889-86c7-8a85e2b20062">
 				<Properties>
 					<Name>ТипЗагрузки</Name>
 					<Synonym>
@@ -287,7 +287,7 @@
 					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
 				</Properties>
 			</Attribute>
-			<Attribute uuid="57bc6bfe-4f5d-46dc-97dd-3750681b6f32">
+			<Attribute uuid="fafa6629-973a-4103-84de-d531ce39dac6">
 				<Properties>
 					<Name>НачалоПериода</Name>
 					<Synonym>
@@ -324,7 +324,7 @@
 					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
 				</Properties>
 			</Attribute>
-			<Attribute uuid="e1632fde-42f9-428b-9fdc-869a767fc146">
+			<Attribute uuid="5d37745e-5671-490c-83a0-669e024c0f1f">
 				<Properties>
 					<Name>КонецПериода</Name>
 					<Synonym>
@@ -361,7 +361,7 @@
 					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
 				</Properties>
 			</Attribute>
-			<Attribute uuid="527d49a4-66e5-494e-9f37-1e899cba2f78">
+			<Attribute uuid="5d20c858-7da5-46b9-837f-3cb5fafe9ae6">
 				<Properties>
 					<Name>ККМ</Name>
 					<Synonym>
@@ -388,7 +388,7 @@
 					<ExtendedEdit>false</ExtendedEdit>
 					<MinValue xsi:nil="true"/>
 					<MaxValue xsi:nil="true"/>
-					<FillChecking>ShowError</FillChecking>
+					<FillChecking>DontCheck</FillChecking>
 					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
 					<ChoiceParameterLinks/>
 					<ChoiceParameters/>
@@ -399,7 +399,7 @@
 					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
 				</Properties>
 			</Attribute>
-			<Attribute uuid="33b9086a-9e23-435c-baac-5b0014e66f78">
+			<Attribute uuid="85ee0247-a538-425a-8f2c-1795eda875f6">
 				<Properties>
 					<Name>РазделятьПоДням</Name>
 					<Synonym>
@@ -433,7 +433,7 @@
 					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
 				</Properties>
 			</Attribute>
-			<Attribute uuid="0558be2f-0e2f-4abc-8453-887741a3f634">
+			<Attribute uuid="3a16f68f-cbf6-439b-ba36-10b5f1138b4f">
 				<Properties>
 					<Name>РазделятьПоВидамОплаты</Name>
 					<Synonym>
@@ -467,7 +467,7 @@
 					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
 				</Properties>
 			</Attribute>
-			<Attribute uuid="ec2b0b84-2ff2-434f-952b-8bcb6262d86a">
+			<Attribute uuid="32b46634-758d-4bdb-84c4-6d28d5d91d51">
 				<Properties>
 					<Name>РазделятьПоСкладам</Name>
 					<Synonym>
@@ -501,7 +501,7 @@
 					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
 				</Properties>
 			</Attribute>
-			<Attribute uuid="d2a94ed4-a5e0-4509-b94f-b14c4a5ca6fb">
+			<Attribute uuid="77acf29e-2ab4-422b-891f-e6bb9dbd8a5f">
 				<Properties>
 					<Name>РазделятьПоПринтеру</Name>
 					<Synonym>
@@ -535,7 +535,7 @@
 					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
 				</Properties>
 			</Attribute>
-			<Attribute uuid="071ccc6e-266a-4779-9364-fc61f1c441bc">
+			<Attribute uuid="216a5e39-aa8f-4650-b038-75afb06f6574">
 				<Properties>
 					<Name>ПроводитьДокументы</Name>
 					<Synonym>
@@ -569,7 +569,7 @@
 					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
 				</Properties>
 			</Attribute>
-			<Attribute uuid="10b3f2e4-21f9-497d-8278-92607da13773">
+			<Attribute uuid="9d4494dd-06be-4543-b1a1-40a8b0f0a527">
 				<Properties>
 					<Name>Склад</Name>
 					<Synonym>
@@ -597,6 +597,44 @@
 					<MinValue xsi:nil="true"/>
 					<MaxValue xsi:nil="true"/>
 					<FillChecking>DontCheck</FillChecking>
+					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+					<ChoiceParameterLinks/>
+					<ChoiceParameters/>
+					<QuickChoice>Auto</QuickChoice>
+					<CreateOnInput>Auto</CreateOnInput>
+					<ChoiceForm/>
+					<LinkByType/>
+					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="bd22fbce-85d9-45e6-9bcc-5731ed999146">
+				<Properties>
+					<Name>Организация</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Организация</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>10</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+					<PasswordMode>false</PasswordMode>
+					<Format/>
+					<EditFormat/>
+					<ToolTip/>
+					<MarkNegatives>false</MarkNegatives>
+					<Mask/>
+					<MultiLine>false</MultiLine>
+					<ExtendedEdit>false</ExtendedEdit>
+					<MinValue xsi:nil="true"/>
+					<MaxValue xsi:nil="true"/>
+					<FillChecking>ShowError</FillChecking>
 					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
 					<ChoiceParameterLinks/>
 					<ChoiceParameters/>

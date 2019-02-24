@@ -146,7 +146,7 @@
 									<DataPath>Объект.ТипЗагрузки</DataPath>
 									<TitleLocation>None</TitleLocation>
 									<RadioButtonType>RadioButtons</RadioButtonType>
-									<ColumnsCount>1</ColumnsCount>
+									<ColumnsCount>2</ColumnsCount>
 									<ChoiceList>
 										<xr:Item>
 											<xr:Presentation/>
@@ -233,7 +233,7 @@
 												<Presentation>
 													<v8:item>
 														<v8:lang>ru</v8:lang>
-														<v8:content>Номенклатура, единицы измерения и контрагенты</v8:content>
+														<v8:content>Номенклатура и единицы измерений</v8:content>
 													</v8:item>
 												</Presentation>
 												<Value xsi:type="xs:decimal">7</Value>
@@ -246,10 +246,23 @@
 												<Presentation>
 													<v8:item>
 														<v8:lang>ru</v8:lang>
-														<v8:content>Переоценки</v8:content>
+														<v8:content>Контрагенты</v8:content>
 													</v8:item>
 												</Presentation>
 												<Value xsi:type="xs:decimal">8</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Переоценки</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xs:decimal">9</Value>
 											</xr:Value>
 										</xr:Item>
 									</ChoiceList>
@@ -259,6 +272,29 @@
 										<Event name="OnChange">ТипЗагрузкиПриИзменении</Event>
 									</Events>
 								</RadioButtonField>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="Предприятие" id="113">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Предприятие</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Предприятие</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ExtendedTooltip name="ПредприятиеРасширеннаяПодсказка" id="114"/>
+							<ChildItems>
+								<InputField name="Организация" id="115">
+									<DataPath>Объект.Организация</DataPath>
+									<TitleLocation>None</TitleLocation>
+									<ContextMenu name="ОрганизацияКонтекстноеМеню" id="116"/>
+									<ExtendedTooltip name="ОрганизацияРасширеннаяПодсказка" id="117"/>
+								</InputField>
 							</ChildItems>
 						</UsualGroup>
 						<UsualGroup name="ФискальныйРегистратор" id="51">
@@ -284,6 +320,7 @@
 											<v8:content>ККМ</v8:content>
 										</v8:item>
 									</Title>
+									<TitleLocation>None</TitleLocation>
 									<HorizontalStretch>true</HorizontalStretch>
 									<ContextMenu name="ККМКонтекстноеМеню" id="34"/>
 									<ExtendedTooltip name="ККМРасширеннаяПодсказка" id="35"/>
@@ -307,6 +344,7 @@
 							<ChildItems>
 								<InputField name="Склад" id="69">
 									<DataPath>Объект.Склад</DataPath>
+									<TitleLocation>None</TitleLocation>
 									<HorizontalStretch>true</HorizontalStretch>
 									<ContextMenu name="СкладКонтекстноеМеню" id="70"/>
 									<ExtendedTooltip name="СкладРасширеннаяПодсказка" id="71"/>
@@ -431,14 +469,36 @@
 					<ChildItems>
 						<Table name="ТаблицаДокументов" id="91">
 							<Representation>List</Representation>
-							<AutoInsertNewRow>true</AutoInsertNewRow>
-							<EnableStartDrag>true</EnableStartDrag>
-							<EnableDrag>true</EnableDrag>
+							<ChangeRowSet>false</ChangeRowSet>
+							<ChangeRowOrder>false</ChangeRowOrder>
+							<ChoiceMode>true</ChoiceMode>
+							<MultipleChoice>true</MultipleChoice>
+							<RowSelectionMode>Row</RowSelectionMode>
 							<DataPath>Объект.ТаблицаДокументов</DataPath>
 							<RowFilter xsi:nil="true"/>
 							<ContextMenu name="ТаблицаДокументовКонтекстноеМеню" id="92"/>
 							<AutoCommandBar name="ТаблицаДокументовКоманднаяПанель" id="93">
 								<Autofill>false</Autofill>
+								<ChildItems>
+									<Button name="ТаблицаДокументовВыделить" id="118">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.ВыделитьВсе</CommandName>
+										<Picture>
+											<xr:Ref>StdPicture.CheckAll</xr:Ref>
+											<xr:LoadTransparent>true</xr:LoadTransparent>
+										</Picture>
+										<ExtendedTooltip name="ТаблицаДокументовВыделитьРасширеннаяПодсказка" id="119"/>
+									</Button>
+									<Button name="ТаблицаДокументовСнять" id="120">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.СнятьВсе</CommandName>
+										<Picture>
+											<xr:Ref>StdPicture.UncheckAll</xr:Ref>
+											<xr:LoadTransparent>true</xr:LoadTransparent>
+										</Picture>
+										<ExtendedTooltip name="ТаблицаДокументовСнятьРасширеннаяПодсказка" id="121"/>
+									</Button>
+								</ChildItems>
 							</AutoCommandBar>
 							<ExtendedTooltip name="ТаблицаДокументовРасширеннаяПодсказка" id="94"/>
 							<SearchStringAddition name="ТаблицаДокументовСтрокаПоиска" id="95">
@@ -592,6 +652,36 @@
 				</v8:item>
 			</ToolTip>
 			<Action>Сохранить</Action>
+		</Command>
+		<Command name="ВыделитьВсе" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выделить все</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выделить все</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВыделитьВсе</Action>
+		</Command>
+		<Command name="СнятьВсе" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Снять все</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Снять все</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СнятьВсе</Action>
 		</Command>
 	</Commands>
 </Form>
